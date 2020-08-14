@@ -10,7 +10,7 @@ pragma solidity ^0.6.6;
 
 import "./VICoin.sol";
 
-contract VIAdjustable is VICoin {
+contract VICoinAdjustable is VICoin {
     event UpdateLifetime(uint256 lifetime);
     event UpdateInitialBalance(uint256 initialBalance);
     event UpdateGenerationAmount(uint256 generationAmount);
