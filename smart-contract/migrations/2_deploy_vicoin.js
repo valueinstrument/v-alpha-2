@@ -1,6 +1,26 @@
+/**
+ * NOTE: The following needs to be updated for use with OpenZeppelin upgradable smart contracts.
+ * 
+ * Use the oz deploy command with the following inputs (or whatever suits your needs):
+ * 
+ * 
+        name  Mozilla Builders
+        symbol  MBT
+        lifetime  1728000                    (100 days)
+        generation amount 10000000000000000000
+        generation period 172800            (10 days)
+        community contribution 1000
+        transaction fee 3333
+        initial balance 100000000000000000000
+        community contribution account 0x0000000000000000000000000000000000000000
+        controller account 0x0000000000000000000000000000000000000000
+
+    TODO: Update this file.
+ */
+
 var VICoin = artifacts.require("./VICoin.sol");
 
-module.exports = function (deployer) {
+module.exports = function(deployer) {
   /**
    * @param name {string} - Token name, e.g. VI Berlin.
    * @param symbol {string} - Token symbol, e.g. VALUE.

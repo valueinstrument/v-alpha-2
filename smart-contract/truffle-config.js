@@ -37,10 +37,14 @@ module.exports = {
     },
     rinkeby: {
       provider: function() {
-        return new HDWalletProvider(private.mnemonic, private.rinkebyEndpoint);
+        return new HDWalletProvider(
+          private.viTestKeys[0],
+          private.rinkebyEndpoint
+        );
       },
       network_id: 4,
-      gas: 4612388,
+      gas: 6700000,
+      // gas: 4612388,
     },
     ropsten: {
       provider: function() {

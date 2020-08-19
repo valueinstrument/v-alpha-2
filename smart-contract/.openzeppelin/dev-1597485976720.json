@@ -1,0 +1,15 @@
+{
+  "contracts": {},
+  "solidityLibs": {
+    "Calculations": {
+      "address": "0x3ABD28BbB287bDC40A06cd54CDa476fEe9Fc323E",
+      "constructorCode": "610774610026600b82828239805160001a60731461001957fe5b30600052607381538281f3fe",
+      "bodyBytecodeHash": "1c04a318ab8ddac0943d2202aaddfd92714348e2676004a5c41ce98429fa08c8",
+      "localBytecodeHash": "f6f89648f7c0cabd2877cecbc38f07cd9c13402437867846a14ce25b2fd99e8a",
+      "deployedBytecodeHash": "f6f89648f7c0cabd2877cecbc38f07cd9c13402437867846a14ce25b2fd99e8a"
+    }
+  },
+  "proxies": {},
+  "manifestVersion": "2.2",
+  "version": "2.3.0"
+}

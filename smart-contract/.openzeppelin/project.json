@@ -1,16 +1,15 @@
 {
   "manifestVersion": "2.2",
   "contracts": {
-    "VICoin": "VICoin",
-    "VIAdjustable": "VIAdjustable"
+    "VICoinAdjustable": "VICoinAdjustable"
   },
   "dependencies": {},
   "name": "v-alpha-2-smart-contract",
-  "version": "2.0.0",
+  "version": "2.3.0",
   "compiler": {
     "compilerSettings": {
       "optimizer": {
-        "enabled": true,
+        "enabled": false,
         "runs": "200"
       }
     },
@@ -18,9 +17,9 @@
       "enabled": false
     },
     "manager": "openzeppelin",
-    "solcVersion": "0.6.6",
     "artifactsDir": "build/contracts",
-    "contractsDir": "contracts"
+    "contractsDir": "contracts",
+    "solcVersion": "0.6.12"
   },
   "telemetryOptIn": false
 }
