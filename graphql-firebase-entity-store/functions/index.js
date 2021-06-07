@@ -26,6 +26,7 @@ const whitelist = [
   'https://staging.builderz.io',
   'https://staging.coindashboards.com',
   'https://faithfinance.app',
+  'https://impactjourney.cc',
 ];
 
 const corsConfig = {

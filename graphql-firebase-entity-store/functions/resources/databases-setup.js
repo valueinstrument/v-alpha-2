@@ -10,7 +10,7 @@ to list projects run -> firebase projects:list
 
 */
 
-const production = false;
+const production = true;
 
 const dev = production ? '' : '-dev';
 
