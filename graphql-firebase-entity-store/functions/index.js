@@ -83,17 +83,22 @@ const server = new ApolloServer( {
       user[0] ? Object.assign( context, user[0] ) : null;
     }
     else if ( auth.includes( 'uPhrase' ) ) {
-      console.log( 111, auth );
+
       const user = await resolvers.Query.getAuth( undefined, { token: auth.replace( 'uPhrase ', '' ) } );
       if ( user[0] ) {
 
-        /** If an address is set, uPhrase must match entity address */
-        if ( lastConnectedAddress != 'not set' ) {
-          user[0].i == lastConnectedAddress ? Object.assign( context, user[0] ) : null;
-        }
-        else {
-          Object.assign( context, user[0] );
-        }
+        /** If an address is set, uPhrase must match entity address
+         * !! disabled for "production june 2021" hotfix, instead set context always
+         */
+
+        // if ( lastConnectedAddress != 'not set' ) {
+        //   user[0].i == lastConnectedAddress ? Object.assign( context, user[0] ) : null;
+        // }
+        // else {
+        //   Object.assign( context, user[0] );
+        // }
+
+        Object.assign( context, user[0] );
       }
       // user[0] ? Object.assign( context, user[0] ) : null;
     }
