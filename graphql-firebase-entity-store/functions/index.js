@@ -83,6 +83,7 @@ const server = new ApolloServer( {
       user[0] ? Object.assign( context, user[0] ) : null;
     }
     else if ( auth.includes( 'uPhrase' ) ) {
+      console.log( 111, auth );
       const user = await resolvers.Query.getAuth( undefined, { token: auth.replace( 'uPhrase ', '' ) } );
       if ( user[0] ) {
 
